@@ -31,6 +31,7 @@ Can wind shifts observed at the Wilmette Harbor buoy (17 miles north) predict sh
 📊 **View the complete analysis in:** [`notebooks/03_correlation_analysis.ipynb`](notebooks/03_correlation_analysis.ipynb)
 
 Key results and visualizations are available in the [`results/`](results/) directory, including:
+
 - Statistical correlation metrics
 - Case study visualizations (successful predictions and failures)
 - Magnitude relationship plots
@@ -95,6 +96,7 @@ Tested modules: `wind_math`, `shift_detector`, `buoy_loader`, `correlator` (>90%
 ## Methodology
 
 **Algorithm Parameters** (derived from tactical racing requirements):
+
 - **North wind filter:** 315-045° (geometry where Wilmette is upwind of Chicago)
 - **Minimum shift magnitude:** 10° (tactically significant change)
 - **Persistence requirement:** 20 minutes (filters out temporary fluctuations)
@@ -104,6 +106,7 @@ Tested modules: `wind_math`, `shift_detector`, `buoy_loader`, `correlator` (>90%
 - **Maximum lag window:** 60 minutes (race-relevant timeframe)
 
 **Key Techniques:**
+
 - **Circular statistics** for wind direction (355° and 5° are 10° apart, not 350°)
 - **Baseline stability validation** to detect shifts from coherent patterns, not oscillations
 - **Time-windowed correlation** to match Wilmette shifts to subsequent Chicago shifts
@@ -113,6 +116,7 @@ Tested modules: `wind_math`, `shift_detector`, `buoy_loader`, `correlator` (>90%
 ## Data Sources
 
 **NOAA National Data Buoy Center (NDBC)** - Historical observations (2021-2025, May-November deployment seasons):
+
 - **Wilmette Harbor (45174):** https://www.ndbc.noaa.gov/station_page.php?station=45174
 - **Chicago (45198):** https://www.ndbc.noaa.gov/station_page.php?station=45198
 
@@ -121,6 +125,7 @@ Tested modules: `wind_math`, `shift_detector`, `buoy_loader`, `correlator` (>90%
 ## Out of Scope
 
 This analysis explicitly excludes:
+
 - HRRR forecast data integration (future enhancement)
 - Real-time monitoring/alerting system (race-day tool is future work)
 - Statistical significance testing (p-values, hypothesis tests)
