@@ -1,6 +1,6 @@
 # Wilmette-Chicago Buoy Analysis
 
-Analysis of wave direction patterns between Wilmette Harbor (NDBC 45174) and Chicago (NDBC 45198) buoys in Lake Michigan. This project investigates whether persistent wave direction shifts at Wilmette Harbor can predict similar shifts at the Chicago buoy.
+Analysis of wave direction patterns between Wilmette Harbor (NDBC 45174) and Chicago (NDBC 45198) buoys in Lake Michigan. This project investigates whether persistent wind direction shifts from the north at Wilmette Harbor can predict similar shifts at the Chicago buoy.
 
 ## Overview
 
